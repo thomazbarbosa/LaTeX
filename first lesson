@@ -143,6 +143,19 @@ Colocando mais coisas ainda
 	Posso querer um espaçamento maior entre os parágrafos através do comando 'vspace'
 	\lipsum[1]
 	
+\end{document}
+
+Aprendendo a alterar a configuração do texto
+
+\documentclass[12pt,a4paper]{article}
+\usepackage[brazilian]{babel} %Pacote que traduz o documento para português do Brasil
+\usepackage[utf8]{inputenc} %Pacote para reconhecimento de acentuação gráfica
+\title{Este é o título do meu artigo}
+\author{Thomaz Barbosa\thanks{My utmost thanks go to Darth Vader}} %autoria com agradecimentos
+\date{\today} %coloca sempre a data que o arquivo foi compilado
+
+\begin{document}
 	
+	Aprendendo a alterar o texto com os comandos do LaTeX. Um exemplo é o \textbf{negrito}, o \textit{itálico} e o \underline{sublinhado}. Os respectivos comandos são 'textbf', 'textit' e 'underline'.
 	
 \end{document}
