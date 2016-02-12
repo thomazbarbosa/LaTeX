@@ -1,0 +1,11 @@
+\documentclass[14pt]{article}
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\title{Este é o título do meu artigo}
+\author{Thomaz Barbosa}
+\date{\today}
+
+\begin{document}
+\maketitle
+Este é o texto do meu documento
+\end{document}
