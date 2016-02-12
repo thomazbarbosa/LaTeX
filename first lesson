@@ -39,3 +39,49 @@ Artigo completo, com capa, agradecimentos, resumo, 2 colunas, seção e outras c
 	\lipsum
 	
 \end{document} 
+
+Outras configurações (alinhamentos) e parágrafos
+
+\documentclass[12pt,a4paper]{article}
+\usepackage[brazilian]{babel} %Pacote que traduz o documento para português do Brasil
+\usepackage[utf8]{inputenc} %Pacote para reconhecimento de acentuação gráfica
+\usepackage{lipsum} %Pacote para geração de texto aleatório em latim
+\title{Este é o título do meu artigo}
+\author{Thomaz Barbosa\thanks{My utmost thanks go to Darth Vader}} %autoria com agradecimentos
+\date{\today} %coloca sempre a data que o arquivo foi compilado
+
+\begin{document}
+	
+	\begin{titlepage}
+	\maketitle
+	\end{titlepage}
+	
+	\begin{abstract}
+	\lipsum[1]
+	\end{abstract}
+	
+	\section{Primeiro tema}
+
+	Este é o texto do meu documento. Mais texto em seguida. 
+	Não adianta simplesmente saltar uma linha na edição para criar um parágrafo. Observe também que no primeiro parágrafo de uma seção não há recuos.
+	
+	É necessário saltar uma linha! \\ Outra forma de se fazer isso é digitando duas barras, porém também não há recuo nessa opção. \newline Uma outra forma é utilizando o comando 'newline' depois de uma barra. Também não há recuo. \par Com o comando 'par' é possível formar também um novo parágrafo, porém esse oferece recuo.
+	
+	\begin{center}
+	É possível alterar a formatação do documento para um texto centralizado igual este aqui. Mas a opção padrão do LaTeX é o parágrafo justificado.
+	\lipsum[1]
+	\end{center}
+	
+	\begin{flushleft}
+	Outra opção é alterar a formatação do documento para um texto alinhado à esquerda.
+	\lipsum[1]
+	\end{flushleft}
+	
+	\begin{flushright}
+	Ou também um alinhamento do texto à direita.
+	\lipsum[1]
+	\end{flushright}
+	
+	\lipsum
+	
+\end{document}
