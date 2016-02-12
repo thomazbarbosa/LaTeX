@@ -1,0 +1,195 @@
+Artigo simples
+
+\documentclass[14pt]{article}
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\title{Este é o título do meu artigo}
+\author{Thomaz Barbosa}
+\date{\today}
+
+\begin{document}
+\maketitle
+Este é o texto do meu documento
+\end{document}
+
+Artigo completo, com capa, agradecimentos, resumo, 2 colunas, seção e outras coisas
+
+\documentclass[12pt,a4paper,twocolumn]{article}
+\usepackage[brazilian]{babel} %Pacote que traduz o documento para português do Brasil
+\usepackage[utf8]{inputenc} %Pacote para reconhecimento de acentuação gráfica
+\usepackage{lipsum} %Pacote para geração de texto aleatório em latim
+\title{Este é o título do meu artigo}
+\author{Thomaz Barbosa\thanks{My utmost thanks go to Darth Vader}} %autoria com agradecimentos
+\date{\today} %coloca sempre a data que o arquivo foi compilado
+
+\begin{document}
+	\begin{titlepage}
+	\maketitle
+	\end{titlepage}
+	
+	\begin{abstract}
+	\lipsum
+	\end{abstract}
+	
+	\section{Primeiro tema}
+
+	Este é o texto do meu documento
+
+	\lipsum
+	
+\end{document} 
+
+Outras configurações (alinhamentos) e parágrafos
+
+\documentclass[12pt,a4paper]{article}
+\usepackage[brazilian]{babel} %Pacote que traduz o documento para português do Brasil
+\usepackage[utf8]{inputenc} %Pacote para reconhecimento de acentuação gráfica
+\usepackage{lipsum} %Pacote para geração de texto aleatório em latim
+\title{Este é o título do meu artigo}
+\author{Thomaz Barbosa\thanks{My utmost thanks go to Darth Vader}} %autoria com agradecimentos
+\date{\today} %coloca sempre a data que o arquivo foi compilado
+
+\begin{document}
+	
+	\begin{titlepage}
+	\maketitle
+	\end{titlepage}
+	
+	\begin{abstract}
+	\lipsum[1]
+	\end{abstract}
+	
+	\section{Primeiro tema}
+
+	Este é o texto do meu documento. Mais texto em seguida. 
+	Não adianta simplesmente saltar uma linha na edição para criar um parágrafo. Observe também que no primeiro parágrafo de uma seção não há recuos.
+	
+	É necessário saltar uma linha! \\ Outra forma de se fazer isso é digitando duas barras, porém também não há recuo nessa opção. \newline Uma outra forma é utilizando o comando 'newline' depois de uma barra. Também não há recuo. \par Com o comando 'par' é possível formar também um novo parágrafo, porém esse oferece recuo.
+	
+	\begin{center}
+	É possível alterar a formatação do documento para um texto centralizado igual este aqui. Mas a opção padrão do LaTeX é o parágrafo justificado.
+	\lipsum[1]
+	\end{center}
+	
+	\begin{flushleft}
+	Outra opção é alterar a formatação do documento para um texto alinhado à esquerda.
+	\lipsum[1]
+	\end{flushleft}
+	
+	\begin{flushright}
+	Ou também um alinhamento do texto à direita.
+	\lipsum[1]
+	\end{flushright}
+	
+	\lipsum
+	
+\end{document}
+
+Colocando mais coisas ainda
+
+\documentclass[12pt,a4paper]{article}
+\usepackage[brazilian]{babel} %Pacote que traduz o documento para português do Brasil
+\usepackage[utf8]{inputenc} %Pacote para reconhecimento de acentuação gráfica
+\usepackage{lipsum} %Pacote para geração de texto aleatório em latim
+\title{Este é o título do meu artigo}
+\author{Thomaz Barbosa\thanks{My utmost thanks go to Darth Vader}} %autoria com agradecimentos
+\date{\today} %coloca sempre a data que o arquivo foi compilado
+
+\begin{document}
+	
+	\begin{titlepage}
+	\maketitle
+	\end{titlepage}
+	
+	\begin{abstract}
+	\lipsum[1]
+	\end{abstract}
+	
+	\section{Primeiro tema}
+
+	Este é o texto do meu documento. Mais texto em seguida. 
+	Não adianta simplesmente saltar uma linha na edição para criar um parágrafo. Observe também que no primeiro parágrafo de uma seção não há recuos.
+	
+	É necessário saltar uma linha! \\ Outra forma de se fazer isso é digitando duas barras, porém também não há recuo nessa opção. \newline Uma outra forma é utilizando o comando 'newline' depois de uma barra. Também não há recuo. \par Com o comando 'par' é possível formar também um novo parágrafo, porém esse oferece recuo.
+	
+	\begin{center}
+	É possível alterar a formatação do documento para um texto centralizado igual este aqui. Mas a opção padrão do LaTeX é o parágrafo justificado.
+	\lipsum[1]
+	\end{center}
+	
+	\begin{flushleft}
+	Outra opção é alterar a formatação do documento para um texto alinhado à esquerda.
+	\lipsum[1]
+	\end{flushleft}
+	
+	\begin{flushright}
+	Ou também um alinhamento do texto à direita.
+	\lipsum[1]
+	\end{flushright}
+	
+	\lipsum
+	
+	\setlength{\parindent} {6cm}
+	Para alterar a largura padrão do recuo, o comando a ser utilizado é o 'setlength'
+	
+	\noindent
+	Também posso querer não ter recuo com o comando 'noindent'.
+	
+	\setlength{\parindent}{1,5cm}
+	\newpage
+	Se quiser que um parágrafo comece em uma nova página (quebra de página) o comando a ser utilizado é o 'newpage'.
+	
+	\vspace{2cm}
+	Posso querer um espaçamento maior entre os parágrafos através do comando 'vspace'
+	\lipsum[1]
+	
+\end{document}
+
+Aprendendo a alterar a configuração do texto
+
+\documentclass[12pt,a4paper]{article}
+\usepackage[brazilian]{babel} %Pacote que traduz o documento para português do Brasil
+\usepackage[utf8]{inputenc} %Pacote para reconhecimento de acentuação gráfica
+\title{Este é o título do meu artigo}
+\author{Thomaz Barbosa\thanks{My utmost thanks go to Darth Vader}} %autoria com agradecimentos
+\date{\today} %coloca sempre a data que o arquivo foi compilado
+
+\begin{document}
+	
+	Aprendendo a alterar o texto com os comandos do LaTeX. Um exemplo é o \textbf{negrito}, o \textit{itálico} e o \underline{sublinhado}. Os respectivos comandos são 'textbf', 'textit' e 'underline'.
+	
+\end{document}
+
+Alterando estilos de texto
+
+\documentclass[12pt,a4paper]{article}
+\usepackage[brazilian]{babel} %Pacote que traduz o documento para português do Brasil
+\usepackage[utf8]{inputenc} %Pacote para reconhecimento de acentuação gráfica
+\usepackage{lipsum} %Pacote para geração de texto aleatório em latim
+
+\begin{document}
+Aprendendo a mudar os estilos do texto
+
+\textit{Itálico}
+ou
+{\it Itálico}
+
+\textbf{Negrito}
+ou
+{\bf Negrito}
+
+\textrm{Romano}
+
+\textsf{Sans Serif}
+
+\texttt{Monoespaçado}
+
+\textsc{Small Caps}
+
+\textsl{Inclinado... que é diferente do itálico}
+
+\emph{Ênfase}
+
+\underline{Sublinhado}
+
+\end{document}
