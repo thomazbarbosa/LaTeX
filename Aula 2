@@ -1,0 +1,83 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[brazilian]{babel} %Pacote que traduz o documento para português do Brasil
+\usepackage[utf8]{inputenc} %Pacote para reconhecimento de acentuação gráfica
+\usepackage{lipsum} %Pacote para geração de texto aleatório em latim
+
+\begin{document}
+
+O LaTeX tem nove tamanhos diferentes de fontes (Font Sizes)
+
+\tiny{tiny}
+
+\scriptsize{scriptsize}
+
+\footnotesize{footnotesize}
+
+\small{small}
+
+\normalsize{normal} 
+
+ou
+
+normal
+
+\large{large}
+
+\Large{Large}
+
+\LARGE{LARGE}
+
+\huge{huge}
+
+\Huge{Huge}
+
+\normalsize
+
+Para fazer citação no trabalho é necessário abrir uma seção especial de 'quote', tal como esta aqui abaixo. 
+
+	\begin{quote}
+	\lipsum[1]
+	\end{quote}
+
+No LaTeX alguns caracteres não conseguem ser impressos normalmente tenho que colocar uma barra antes. São eles o \&, o \$, o \%, o \_, as chaves \{ ou \}... O acento circunflexo de vôvô não se aceita sozinho, também tem que ser colocado em \^{}. 
+
+Há diferentes ambientes (environments) para a criação de listas o itemize, o enumerate e o description.
+
+O primeiro deles é o Itemize, que cria listas pontuadas.
+
+\begin{itemize}
+	\item Banana
+	\item Maçã
+	\item Abacaxi
+	\item Laranja
+\end{itemize}
+
+O segundo deles é o Enumerate, que cria listas enumeradas.
+
+\begin{enumerate}
+	\item Banana
+	\item Maçã
+	\item Abacaxi
+	\item Laranja
+	\item Outros
+		\begin{enumerate}
+		\item Arroz
+		\item Trigo
+		\item Cevada
+			\begin{enumerate}
+				\item Skol
+				\item Antartica
+				\item Bohemia
+			\end{enumerate} 
+		\end{enumerate}
+\end{enumerate}
+
+A terceira delas é o description, que cria listas sem nenhum sinal, porém descritiva dos items que foram colocados.
+
+\begin{description}
+	\item[Arroz] Cereal comum nas refeições
+	\item [Feijão] Outro ítem que não falta nas nossas refeições
+	\item [Brigadeiro] Típico doce brasileiro
+\end{description}
+
+\end{document}
