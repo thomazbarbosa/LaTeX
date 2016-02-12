@@ -1,3 +1,5 @@
+Artigo simples
+
 \documentclass[14pt]{article}
 \usepackage[brazilian]{babel}
 \usepackage[utf8]{inputenc}
@@ -9,3 +11,31 @@
 \maketitle
 Este é o texto do meu documento
 \end{document}
+
+Artigo completo, com capa, agradecimentos, resumo, 2 colunas, seção e outras coisas
+
+\documentclass[12pt,a4paper,twocolumn]{article}
+\usepackage[brazilian]{babel} %Pacote que traduz o documento para português do Brasil
+\usepackage[utf8]{inputenc} %Pacote para reconhecimento de acentuação gráfica
+\usepackage{lipsum} %Pacote para geração de texto aleatório em latim
+\title{Este é o título do meu artigo}
+\author{Thomaz Barbosa\thanks{My utmost thanks go to Darth Vader}} %autoria com agradecimentos
+\date{\today} %coloca sempre a data que o arquivo foi compilado
+
+\begin{document}
+	
+	\begin{titlepage}
+	\maketitle
+	\end{titlepage}
+	
+	\begin{abstract}
+	\lipsum
+	\end{abstract}
+	
+	\section{Primeiro tema}
+
+	Este é o texto do meu documento
+
+	\lipsum
+	
+\end{document} 
